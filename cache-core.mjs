@@ -13,3 +13,17 @@ export async function saveAsset(cache,asset,{fetcher=fetch,signal}={}){
  await cache.put(asset.url,response);
  return true;
 }
+// Bound simultaneous files to keep memory use predictable on phones.
+export async function saveBatch(assets,save,onProgress,controller,concurrency=3){
+ let next=0,done=0,failure;
+ async function worker(){
+  try{
+   while(next<assets.length){
+    if(controller.signal.aborted)throw new DOMException('Stopped','AbortError');
+    const asset=assets[next++];await save(asset,controller.signal);onProgress(++done);
+   }
+  }catch(error){if(!failure){failure=error;controller.abort()}}
+ }
+ await Promise.all(Array.from({length:Math.min(concurrency,assets.length)},worker));
+ if(failure)throw failure;
+}

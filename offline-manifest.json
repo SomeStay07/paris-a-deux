@@ -1,5 +1,5 @@
 {
-  "version": "ca41c20f704cc7752189",
+  "version": "a9f81d0fa22454034984",
   "assets": [
     {
       "url": "tracks/bir-hakeim-short.mp3?v=0423911fad1fce81",
@@ -297,14 +297,14 @@
     {
       "url": "offline.mjs",
       "kind": "shell",
-      "bytes": 5664,
-      "sha256": "34abaede9ebbb6fa2e898060ea7673edfe5ff186c56d4bd621d46e8e24fea842"
+      "bytes": 5692,
+      "sha256": "18247e32dcf656dd99573fd0242e695cb4daa86be0d84cbba745cba9235d4446"
     },
     {
       "url": "cache-core.mjs",
       "kind": "shell",
-      "bytes": 769,
-      "sha256": "74a4bcd77e7e2ae76e864b42b4bc451605882b59deca67326cf81320b6876a70"
+      "bytes": 1366,
+      "sha256": "ad2846b9592288be68a8687652d24595b0fd2353d0c8153980daf97da6c6bd29"
     },
     {
       "url": "range.js",

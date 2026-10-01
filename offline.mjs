@@ -1,4 +1,4 @@
-import {CONTENT_CACHE,validResponse,saveAsset} from './cache-core.mjs';
+import {CONTENT_CACHE,validResponse,saveAsset,saveBatch} from './cache-core.mjs';
 const $=id=>document.getElementById(id);
 let manifest,working=false,controller;
 const say=text=>{$('offline-status').textContent=text};
@@ -18,15 +18,13 @@ async function status(){
 async function download(scope){
  if(working||!manifest)return;busy(true);controller=new AbortController();
  const assets=scopeAssets(scope),content=await caches.open(CONTENT_CACHE),shell=await caches.open('paris-shell-'+manifest.version);
+ say('Сохраняем и проверяем файлы. Не закрывайте приложение.');
  $('offline-progress').max=assets.length;$('offline-progress').value=0;$('offline-progress').hidden=false;
  try{
   if(navigator.storage?.persist)await navigator.storage.persist().catch(()=>false);
-  let done=0;
-  for(const a of assets){
-   if(controller.signal.aborted)throw new DOMException('Stopped','AbortError');
-   await saveAsset(a.kind==='shell'?shell:content,a,{signal:controller.signal});
-   $('offline-progress').value=++done;say(`Сохраняем и проверяем: ${done} из ${assets.length}. Не закрывайте приложение.`);
-  }
+  await saveBatch(assets,(a,signal)=>saveAsset(a.kind==='shell'?shell:content,a,{signal}),done=>{
+   $('offline-progress').value=done;say(`Сохраняем и проверяем: ${done} из ${assets.length}. Не закрывайте приложение.`);
+  },controller);
   const check=await inspect(scope);
   if(!check.complete)throw new Error('incomplete');
   say((scope==='all'?'Весь гид':'Лувр')+' сохранён и проверен. Включите авиарежим, снова откройте гид и запустите другую запись.');
