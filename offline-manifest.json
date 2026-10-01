@@ -1,5 +1,5 @@
 {
-  "version": "a9f81d0fa22454034984",
+  "version": "9e9afd4e621259f77e71",
   "assets": [
     {
       "url": "tracks/bir-hakeim-short.mp3?v=0423911fad1fce81",
@@ -30,17 +30,17 @@
       "group": "city"
     },
     {
-      "url": "tracks/eiffel-short.mp3?v=bb542fc859e1058f",
+      "url": "tracks/eiffel-short.mp3?v=91d63dc8c0226646",
       "kind": "audio",
-      "bytes": 363163,
-      "sha256": "bb542fc859e1058ff156a258c7ffbb2d03e719eae1969988ae7fc56b97b43b04",
+      "bytes": 375388,
+      "sha256": "91d63dc8c0226646f54b81242a2d017dba12669d8ce72f689949900baaaeefaa",
       "group": "city"
     },
     {
-      "url": "tracks/eiffel-long.mp3?v=0d746ce1a5b80d6f",
+      "url": "tracks/eiffel-long.mp3?v=269c14bc15116099",
       "kind": "audio",
-      "bytes": 1039383,
-      "sha256": "0d746ce1a5b80d6f7bc21cd1bea9028bc31486204745d6808e70b2617c9334c0",
+      "bytes": 1031736,
+      "sha256": "269c14bc15116099f891d226ef8f052160570295aa71eabdec5366d4f7e764d4",
       "group": "city"
     },
     {
@@ -86,17 +86,17 @@
       "group": "city"
     },
     {
-      "url": "tracks/louvre-short.mp3?v=aaf9ba714d44c991",
+      "url": "tracks/louvre-short.mp3?v=e6497dd7be2262bf",
       "kind": "audio",
-      "bytes": 383914,
-      "sha256": "aaf9ba714d44c99120492b3feef318ad916e2081ab5af7d87c1a2b3294ca2d1b",
+      "bytes": 414874,
+      "sha256": "e6497dd7be2262bff1dba2a0a9098cbcdab4c5bc1bec691094ca9982fa691770",
       "group": "city"
     },
     {
-      "url": "tracks/louvre-long.mp3?v=c29eb29b29511fe6",
+      "url": "tracks/louvre-long.mp3?v=bb74036f07e6e71b",
       "kind": "audio",
-      "bytes": 981366,
-      "sha256": "c29eb29b29511fe692b2f9f613fd9487369d7d5a34c4d49bacc36652c6926c8b",
+      "bytes": 1050054,
+      "sha256": "bb74036f07e6e71b4ff075f29184c055b942ef6f19eb7ecc27d84d9b50acf41d",
       "group": "city"
     },
     {
@@ -156,10 +156,10 @@
       "group": "museum"
     },
     {
-      "url": "tracks/venus-short.mp3?v=03b02d18aedf48c0",
+      "url": "tracks/venus-short.mp3?v=5efbba2147033c52",
       "kind": "audio",
-      "bytes": 293299,
-      "sha256": "03b02d18aedf48c0dc2986853bddb68c4c14f479736226f2014966d9dce18488",
+      "bytes": 308131,
+      "sha256": "5efbba2147033c52fa9596456fc48209704fad4e7d8952a0698ec92219345fee",
       "group": "museum"
     },
     {
@@ -226,10 +226,10 @@
       "group": "museum"
     },
     {
-      "url": "tracks/raft-short.mp3?v=2a0cddbeb410ea3b",
+      "url": "tracks/raft-short.mp3?v=be7976f07fe133ab",
       "kind": "audio",
-      "bytes": 325122,
-      "sha256": "2a0cddbeb410ea3b9ca6f66ff2f191370b9c19402459ab5fcc3efc8954e60439",
+      "bytes": 324690,
+      "sha256": "be7976f07fe133ab243a44006f45dfa53aca051e907c2e1abc7bfafd3138faf3",
       "group": "museum"
     },
     {
@@ -291,8 +291,8 @@
     {
       "url": "index.html",
       "kind": "shell",
-      "bytes": 142512,
-      "sha256": "a0338a88c10dc004b0d61f9727739a3e26e2a63bbdf1653a5d938f48afa6936e"
+      "bytes": 143838,
+      "sha256": "67add5ad7d8396c755c356d5aabd43130149f737e3e7f4d2702a8ac35a4bb590"
     },
     {
       "url": "offline.mjs",
@@ -329,6 +329,12 @@
       "kind": "shell",
       "bytes": 1033,
       "sha256": "54254607e8d6e58d7ea39c2b793b2b883472412c5838c650fcf786d55fc94540"
+    },
+    {
+      "url": "content-review.html",
+      "kind": "shell",
+      "bytes": 16399,
+      "sha256": "8311751dabbea18514f732553a7376ea7f85be683a1701196307a378506783b0"
     }
   ]
 }
