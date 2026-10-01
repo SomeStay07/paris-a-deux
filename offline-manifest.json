@@ -1,0 +1,334 @@
+{
+  "version": "ca41c20f704cc7752189",
+  "assets": [
+    {
+      "url": "tracks/bir-hakeim-short.mp3?v=0423911fad1fce81",
+      "kind": "audio",
+      "bytes": 301496,
+      "sha256": "0423911fad1fce81136e75fc8407e9fb5ac6e42659102e3f81f32dacb1050ff1",
+      "group": "city"
+    },
+    {
+      "url": "tracks/bir-hakeim-long.mp3?v=25aab4a9049b489a",
+      "kind": "audio",
+      "bytes": 948484,
+      "sha256": "25aab4a9049b489af93573e4d0ae847fba19be880a499e7186b6811e34e4be84",
+      "group": "city"
+    },
+    {
+      "url": "tracks/trocadero-short.mp3?v=3d36d9b8044e4e25",
+      "kind": "audio",
+      "bytes": 305106,
+      "sha256": "3d36d9b8044e4e25d8b2019650c7f13fc792e74473da86bf2ac0729238514a03",
+      "group": "city"
+    },
+    {
+      "url": "tracks/trocadero-long.mp3?v=0f0c194a15ea2215",
+      "kind": "audio",
+      "bytes": 910046,
+      "sha256": "0f0c194a15ea22159647b63a509fd247c72e926d7dc76d426d17d3fe46b079d5",
+      "group": "city"
+    },
+    {
+      "url": "tracks/eiffel-short.mp3?v=bb542fc859e1058f",
+      "kind": "audio",
+      "bytes": 363163,
+      "sha256": "bb542fc859e1058ff156a258c7ffbb2d03e719eae1969988ae7fc56b97b43b04",
+      "group": "city"
+    },
+    {
+      "url": "tracks/eiffel-long.mp3?v=0d746ce1a5b80d6f",
+      "kind": "audio",
+      "bytes": 1039383,
+      "sha256": "0d746ce1a5b80d6f7bc21cd1bea9028bc31486204745d6808e70b2617c9334c0",
+      "group": "city"
+    },
+    {
+      "url": "tracks/alma-short.mp3?v=b6813e4029d117a1",
+      "kind": "audio",
+      "bytes": 331033,
+      "sha256": "b6813e4029d117a189e72e7c8b9706dfa2ea11be44d99fe515a86b0385c874bc",
+      "group": "city"
+    },
+    {
+      "url": "tracks/alma-long.mp3?v=8b5d646201cc30e8",
+      "kind": "audio",
+      "bytes": 961317,
+      "sha256": "8b5d646201cc30e86e7de331ac9f6f3c19d9da49ba3b3a255bb9ac865270effb",
+      "group": "city"
+    },
+    {
+      "url": "tracks/alexandre-short.mp3?v=4541122af7ccbf09",
+      "kind": "audio",
+      "bytes": 373679,
+      "sha256": "4541122af7ccbf09b28ad40dae2e184c836a6b38c916be3107760a825ef2c561",
+      "group": "city"
+    },
+    {
+      "url": "tracks/alexandre-long.mp3?v=d6b0d9f471000667",
+      "kind": "audio",
+      "bytes": 925771,
+      "sha256": "d6b0d9f4710006676c7842f27d7acc5d7c2cb7c22227faf56fe3d73b6d736a72",
+      "group": "city"
+    },
+    {
+      "url": "tracks/orsay-short.mp3?v=9167bbd3267dbd72",
+      "kind": "audio",
+      "bytes": 339828,
+      "sha256": "9167bbd3267dbd724f9d1a5406b88aa4906d17bff39d8f22fe552e0a7c43a50e",
+      "group": "city"
+    },
+    {
+      "url": "tracks/orsay-long.mp3?v=e35e72dc8d3b8fb0",
+      "kind": "audio",
+      "bytes": 999776,
+      "sha256": "e35e72dc8d3b8fb0f9cf784321fe2300889bcc449b32586e3dc62c122727f90d",
+      "group": "city"
+    },
+    {
+      "url": "tracks/louvre-short.mp3?v=aaf9ba714d44c991",
+      "kind": "audio",
+      "bytes": 383914,
+      "sha256": "aaf9ba714d44c99120492b3feef318ad916e2081ab5af7d87c1a2b3294ca2d1b",
+      "group": "city"
+    },
+    {
+      "url": "tracks/louvre-long.mp3?v=c29eb29b29511fe6",
+      "kind": "audio",
+      "bytes": 981366,
+      "sha256": "c29eb29b29511fe692b2f9f613fd9487369d7d5a34c4d49bacc36652c6926c8b",
+      "group": "city"
+    },
+    {
+      "url": "tracks/pont-neuf-short.mp3?v=0ad8070a2e90a04f",
+      "kind": "audio",
+      "bytes": 345588,
+      "sha256": "0ad8070a2e90a04f927556744414ea3ef3ec39174c63955ef7fd65361471fda7",
+      "group": "city"
+    },
+    {
+      "url": "tracks/pont-neuf-long.mp3?v=42c86f2c29549a77",
+      "kind": "audio",
+      "bytes": 955856,
+      "sha256": "42c86f2c29549a77ebc210625b2fb801fc27206ea60213c08ee2a80d0f819af6",
+      "group": "city"
+    },
+    {
+      "url": "tracks/books-short.mp3?v=4a61b5fa8a0d52cb",
+      "kind": "audio",
+      "bytes": 368793,
+      "sha256": "4a61b5fa8a0d52cb828e39580fa8319c86d365f022d49594fac3c716e13284e2",
+      "group": "city"
+    },
+    {
+      "url": "tracks/books-long.mp3?v=65745032d56c50af",
+      "kind": "audio",
+      "bytes": 961205,
+      "sha256": "65745032d56c50af20811c84a362678bbddb6e7ac142d4095b26491eb6ef56a1",
+      "group": "city"
+    },
+    {
+      "url": "tracks/notre-dame-short.mp3?v=ec10f28c79ea6b00",
+      "kind": "audio",
+      "bytes": 328740,
+      "sha256": "ec10f28c79ea6b009e5628a2e256513b1fa51e1bce69aac6bee9953eae9c301c",
+      "group": "city"
+    },
+    {
+      "url": "tracks/notre-dame-long.mp3?v=bfbf50b94d765e9d",
+      "kind": "audio",
+      "bytes": 995312,
+      "sha256": "bfbf50b94d765e9dac391dc1b86cf77e9a6b6f7802ab0996fe591afce224713a",
+      "group": "city"
+    },
+    {
+      "url": "tracks/moat-short.mp3?v=5614d118a9ed3ced",
+      "kind": "audio",
+      "bytes": 308427,
+      "sha256": "5614d118a9ed3cedcc28abd3d8e78f27a282451449a7ec7c488e8291c9faa290",
+      "group": "museum"
+    },
+    {
+      "url": "tracks/moat-long.mp3?v=5726da7c28f74861",
+      "kind": "audio",
+      "bytes": 891191,
+      "sha256": "5726da7c28f74861ed3e0857019a36c491fb7fa0a9b3b71e4de2d1f17bc31fc7",
+      "group": "museum"
+    },
+    {
+      "url": "tracks/venus-short.mp3?v=03b02d18aedf48c0",
+      "kind": "audio",
+      "bytes": 293299,
+      "sha256": "03b02d18aedf48c0dc2986853bddb68c4c14f479736226f2014966d9dce18488",
+      "group": "museum"
+    },
+    {
+      "url": "tracks/venus-long.mp3?v=000398b58cc74d46",
+      "kind": "audio",
+      "bytes": 959007,
+      "sha256": "000398b58cc74d46af64953a07bd95f69c51cd77113e93257fe70a87135af32f",
+      "group": "museum"
+    },
+    {
+      "url": "tracks/nike-short.mp3?v=ef24e2b881ad588d",
+      "kind": "audio",
+      "bytes": 270249,
+      "sha256": "ef24e2b881ad588da6298d005743860833b437f82e1e429e5b28934eaecaad82",
+      "group": "museum"
+    },
+    {
+      "url": "tracks/nike-long.mp3?v=33226b7d54219682",
+      "kind": "audio",
+      "bytes": 989381,
+      "sha256": "33226b7d542196824fa21c843b2d23faa3f228112aed2a6b5e694e49fe0249ca",
+      "group": "museum"
+    },
+    {
+      "url": "tracks/mona-short.mp3?v=c717a7e13bfdb5fe",
+      "kind": "audio",
+      "bytes": 320511,
+      "sha256": "c717a7e13bfdb5fe5234dc48d6ba2bacb165dc803fe7a54f088887da4fce7f3c",
+      "group": "museum"
+    },
+    {
+      "url": "tracks/mona-long.mp3?v=7798b779b024d556",
+      "kind": "audio",
+      "bytes": 954251,
+      "sha256": "7798b779b024d55674ad54e79bd44e6d331ed2daf9146553d97af44b61cc92d0",
+      "group": "museum"
+    },
+    {
+      "url": "tracks/cana-short.mp3?v=0250c50fbb8a55ad",
+      "kind": "audio",
+      "bytes": 330473,
+      "sha256": "0250c50fbb8a55ad1ca8523fd760720584fefb0192bd718200b525ed95350e87",
+      "group": "museum"
+    },
+    {
+      "url": "tracks/cana-long.mp3?v=d68a9cded999d4b5",
+      "kind": "audio",
+      "bytes": 967237,
+      "sha256": "d68a9cded999d4b5d45969fc955db1c7f8bfa82a0ac24a71bd3a54bd345130db",
+      "group": "museum"
+    },
+    {
+      "url": "tracks/coronation-short.mp3?v=10358f8f12ffc995",
+      "kind": "audio",
+      "bytes": 338373,
+      "sha256": "10358f8f12ffc995e18d7bf23acfeb72c2e2036e09e69de4872176bfc009ad51",
+      "group": "museum"
+    },
+    {
+      "url": "tracks/coronation-long.mp3?v=4eebec2046b88faa",
+      "kind": "audio",
+      "bytes": 994721,
+      "sha256": "4eebec2046b88faab84196d4455c57b3b36396cbd7de698c84e79c8dd23ea6d5",
+      "group": "museum"
+    },
+    {
+      "url": "tracks/raft-short.mp3?v=2a0cddbeb410ea3b",
+      "kind": "audio",
+      "bytes": 325122,
+      "sha256": "2a0cddbeb410ea3b9ca6f66ff2f191370b9c19402459ab5fcc3efc8954e60439",
+      "group": "museum"
+    },
+    {
+      "url": "tracks/raft-long.mp3?v=3546743cc6ae9380",
+      "kind": "audio",
+      "bytes": 986222,
+      "sha256": "3546743cc6ae93805bf47e522f4bd5480729c680e6af4da59774445a49d5943f",
+      "group": "museum"
+    },
+    {
+      "url": "tracks/liberty-short.mp3?v=91fcae1c35d1ece9",
+      "kind": "audio",
+      "bytes": 322675,
+      "sha256": "91fcae1c35d1ece905f9fa4b45b664ed8dc9f0361b59383845b215712004057c",
+      "group": "museum"
+    },
+    {
+      "url": "tracks/liberty-long.mp3?v=58a7156f7f3fd2d1",
+      "kind": "audio",
+      "bytes": 978303,
+      "sha256": "58a7156f7f3fd2d1f68c1f052b6becf1ae2f393a60de5e73d322b5d947840a9a",
+      "group": "museum"
+    },
+    {
+      "url": "tracks/slaves-short.mp3?v=aad06d5ed3151aaa",
+      "kind": "audio",
+      "bytes": 332891,
+      "sha256": "aad06d5ed3151aaaeebb32549ee7664aa17b135ce36807ec00cea81170e71078",
+      "group": "museum"
+    },
+    {
+      "url": "tracks/slaves-long.mp3?v=de9e798b15a2e60c",
+      "kind": "audio",
+      "bytes": 948055,
+      "sha256": "de9e798b15a2e60cc4ab4360840ceacbf321952b086661e63e2b52e0989935c2",
+      "group": "museum"
+    },
+    {
+      "url": "tracks/psyche-short.mp3?v=d1a3ce5f979569d7",
+      "kind": "audio",
+      "bytes": 319520,
+      "sha256": "d1a3ce5f979569d7dbdc5e1b3607f0c07252b174e4b5ccb7f0d9dac20069c014",
+      "group": "museum"
+    },
+    {
+      "url": "tracks/psyche-long.mp3?v=c3dd77552bd7a36d",
+      "kind": "audio",
+      "bytes": 1001932,
+      "sha256": "c3dd77552bd7a36dbd4ab97d3f0c833da9a280b56dfe5a77a74ffb7edcd3deff",
+      "group": "museum"
+    },
+    {
+      "url": "louvre-map.pdf?v=3976303210dc3f65",
+      "kind": "map",
+      "bytes": 5760546,
+      "sha256": "3976303210dc3f657428f7320317f8a8f6fa24dadcaf0b2ec58732dc602f5d1e",
+      "group": "museum"
+    },
+    {
+      "url": "index.html",
+      "kind": "shell",
+      "bytes": 142512,
+      "sha256": "a0338a88c10dc004b0d61f9727739a3e26e2a63bbdf1653a5d938f48afa6936e"
+    },
+    {
+      "url": "offline.mjs",
+      "kind": "shell",
+      "bytes": 5664,
+      "sha256": "34abaede9ebbb6fa2e898060ea7673edfe5ff186c56d4bd621d46e8e24fea842"
+    },
+    {
+      "url": "cache-core.mjs",
+      "kind": "shell",
+      "bytes": 769,
+      "sha256": "74a4bcd77e7e2ae76e864b42b4bc451605882b59deca67326cf81320b6876a70"
+    },
+    {
+      "url": "range.js",
+      "kind": "shell",
+      "bytes": 1089,
+      "sha256": "80c30d8d4de0df85b3842d6398f84b7466e7caa3f3d6e2474dd5f14db567feb5"
+    },
+    {
+      "url": "manifest.webmanifest",
+      "kind": "shell",
+      "bytes": 264,
+      "sha256": "3b2911cb105290c53c2e85becf62e21ca34728b6e164892c69c9bd88e62412bd"
+    },
+    {
+      "url": "icon.svg",
+      "kind": "shell",
+      "bytes": 341,
+      "sha256": "e11486fd59aa6ca1a522c2d0c283446cae5eea156b4809d307a79ad56d187d90"
+    },
+    {
+      "url": "icon-180.png",
+      "kind": "shell",
+      "bytes": 1033,
+      "sha256": "54254607e8d6e58d7ea39c2b793b2b883472412c5838c650fcf786d55fc94540"
+    }
+  ]
+}
