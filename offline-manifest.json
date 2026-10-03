@@ -1,5 +1,5 @@
 {
-  "version": "5d422f3c786d40f11ccd",
+  "version": "a2abc0e80a451766c626",
   "assets": [
     {
       "url": "tracks/bir-hakeim-short.mp3?v=0423911fad1fce81",
@@ -9,10 +9,10 @@
       "group": "city"
     },
     {
-      "url": "tracks/bir-hakeim-long.mp3?v=25aab4a9049b489a",
+      "url": "tracks/bir-hakeim-long.mp3?v=f1774235c4ecf53c",
       "kind": "audio",
-      "bytes": 948484,
-      "sha256": "25aab4a9049b489af93573e4d0ae847fba19be880a499e7186b6811e34e4be84",
+      "bytes": 2207188,
+      "sha256": "f1774235c4ecf53ce55d4b4d84435ef8a33014dacec632bb4f5f856b98db0c0b",
       "group": "city"
     },
     {
@@ -23,10 +23,10 @@
       "group": "city"
     },
     {
-      "url": "tracks/trocadero-long.mp3?v=0f0c194a15ea2215",
+      "url": "tracks/trocadero-long.mp3?v=ae9545f2fbf05424",
       "kind": "audio",
-      "bytes": 910046,
-      "sha256": "0f0c194a15ea22159647b63a509fd247c72e926d7dc76d426d17d3fe46b079d5",
+      "bytes": 2159966,
+      "sha256": "ae9545f2fbf0542401117b51e6c7ccc017b93a1d5e25628c8ca96317361a10bd",
       "group": "city"
     },
     {
@@ -37,10 +37,10 @@
       "group": "city"
     },
     {
-      "url": "tracks/eiffel-long.mp3?v=269c14bc15116099",
+      "url": "tracks/eiffel-long.mp3?v=3bbc2a1931447619",
       "kind": "audio",
-      "bytes": 1031736,
-      "sha256": "269c14bc15116099f891d226ef8f052160570295aa71eabdec5366d4f7e764d4",
+      "bytes": 2117784,
+      "sha256": "3bbc2a1931447619869c86518957500e902686bd5d64c87ca15702b2fc96eeff",
       "group": "city"
     },
     {
@@ -51,10 +51,10 @@
       "group": "city"
     },
     {
-      "url": "tracks/alma-long.mp3?v=8b5d646201cc30e8",
+      "url": "tracks/alma-long.mp3?v=a723da29d8b22aa6",
       "kind": "audio",
-      "bytes": 961317,
-      "sha256": "8b5d646201cc30e86e7de331ac9f6f3c19d9da49ba3b3a255bb9ac865270effb",
+      "bytes": 2183589,
+      "sha256": "a723da29d8b22aa6e81c68a2542b64a4d9959cd962e4579df1b419d5b7b15dad",
       "group": "city"
     },
     {
@@ -65,10 +65,10 @@
       "group": "city"
     },
     {
-      "url": "tracks/alexandre-long.mp3?v=d6b0d9f471000667",
+      "url": "tracks/alexandre-long.mp3?v=5276e78cee447589",
       "kind": "audio",
-      "bytes": 925771,
-      "sha256": "d6b0d9f4710006676c7842f27d7acc5d7c2cb7c22227faf56fe3d73b6d736a72",
+      "bytes": 1908139,
+      "sha256": "5276e78cee447589a316413e35aa456559cb2f4d7f661faac4faf44b172a02ae",
       "group": "city"
     },
     {
@@ -79,10 +79,10 @@
       "group": "city"
     },
     {
-      "url": "tracks/orsay-long.mp3?v=e35e72dc8d3b8fb0",
+      "url": "tracks/orsay-long.mp3?v=847fe54863a679d9",
       "kind": "audio",
-      "bytes": 999776,
-      "sha256": "e35e72dc8d3b8fb0f9cf784321fe2300889bcc449b32586e3dc62c122727f90d",
+      "bytes": 2082944,
+      "sha256": "847fe54863a679d910d9520e17ca7b086f83d02c4206954d0ae3f3465b404832",
       "group": "city"
     },
     {
@@ -93,10 +93,10 @@
       "group": "city"
     },
     {
-      "url": "tracks/louvre-long.mp3?v=bb74036f07e6e71b",
+      "url": "tracks/louvre-long.mp3?v=4237faf03e8385c8",
       "kind": "audio",
-      "bytes": 1050054,
-      "sha256": "bb74036f07e6e71b4ff075f29184c055b942ef6f19eb7ecc27d84d9b50acf41d",
+      "bytes": 2058198,
+      "sha256": "4237faf03e8385c8ec2128c4abd86dc0e380ee024801013764c7154ee5d5c68a",
       "group": "city"
     },
     {
@@ -107,10 +107,10 @@
       "group": "city"
     },
     {
-      "url": "tracks/pont-neuf-long.mp3?v=42c86f2c29549a77",
+      "url": "tracks/pont-neuf-long.mp3?v=ae93abf3e18463b1",
       "kind": "audio",
-      "bytes": 955856,
-      "sha256": "42c86f2c29549a77ebc210625b2fb801fc27206ea60213c08ee2a80d0f819af6",
+      "bytes": 2163728,
+      "sha256": "ae93abf3e18463b12a58f50f4f5b2b0f06df1eb3bb70e64a811006021196413d",
       "group": "city"
     },
     {
@@ -121,10 +121,10 @@
       "group": "city"
     },
     {
-      "url": "tracks/books-long.mp3?v=65745032d56c50af",
+      "url": "tracks/books-long.mp3?v=6282b14d59972e4b",
       "kind": "audio",
-      "bytes": 961205,
-      "sha256": "65745032d56c50af20811c84a362678bbddb6e7ac142d4095b26491eb6ef56a1",
+      "bytes": 2233301,
+      "sha256": "6282b14d59972e4b95ecea6d4732e63b9be9b9f7ebca1b89c7988793560b57a3",
       "group": "city"
     },
     {
@@ -135,10 +135,10 @@
       "group": "city"
     },
     {
-      "url": "tracks/notre-dame-long.mp3?v=bfbf50b94d765e9d",
+      "url": "tracks/notre-dame-long.mp3?v=f330e453dc9069f0",
       "kind": "audio",
-      "bytes": 995312,
-      "sha256": "bfbf50b94d765e9dac391dc1b86cf77e9a6b6f7802ab0996fe591afce224713a",
+      "bytes": 2089712,
+      "sha256": "f330e453dc9069f079c02b3cf493e546a8c402a3644587318a9f6bac46d7c3d3",
       "group": "city"
     },
     {
@@ -291,14 +291,20 @@
     {
       "url": "index.html",
       "kind": "shell",
-      "bytes": 144536,
-      "sha256": "c063e2d78ca90379cd245367a9b5ad1483a0be8e2f3e92468611e810f82ad771"
+      "bytes": 199769,
+      "sha256": "62292afc745747fa7a93998da2f6b07929e5dac827a63261a5e838309c73f843"
     },
     {
       "url": "offline.mjs",
       "kind": "shell",
       "bytes": 5944,
       "sha256": "4c4a063acf74752359d309f1e428c8aaed17986f2be5027a131553a118de62c0"
+    },
+    {
+      "url": "playback.js",
+      "kind": "shell",
+      "bytes": 1716,
+      "sha256": "a72e2bd2a95f1bc5d83e6ea149091f4885ce0791a03f9eb884f252e45243daa0"
     },
     {
       "url": "cache-core.mjs",
@@ -333,8 +339,8 @@
     {
       "url": "content-review.html",
       "kind": "shell",
-      "bytes": 22079,
-      "sha256": "d66722bc2bd9aa70b7cbef052664f20a30455e99eeecffffc7261bdf0c709be8"
+      "bytes": 24450,
+      "sha256": "8394f1605762028c7988e949c0b2ea39c5fea273cf5a10925ca4e33ea71cfc31"
     }
   ]
 }

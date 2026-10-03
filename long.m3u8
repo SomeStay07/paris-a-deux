@@ -1,23 +1,23 @@
 #EXTM3U
-#EXTINF:158,Мост Бир-Акейм
+#EXTINF:368,Мост Бир-Акейм
 tracks/bir-hakeim-long.mp3
-#EXTINF:152,Трокадеро
+#EXTINF:360,Трокадеро
 tracks/trocadero-long.mp3
-#EXTINF:172,Эйфелева башня
+#EXTINF:353,Эйфелева башня
 tracks/eiffel-long.mp3
-#EXTINF:160,Мост Альма
+#EXTINF:364,Мост Альма
 tracks/alma-long.mp3
-#EXTINF:154,Мост Александра III
+#EXTINF:318,Мост Александра III
 tracks/alexandre-long.mp3
-#EXTINF:167,Музей Орсе
+#EXTINF:347,Музей Орсе
 tracks/orsay-long.mp3
-#EXTINF:175,Лувр со стороны Сены
+#EXTINF:343,Лувр со стороны Сены
 tracks/louvre-long.mp3
-#EXTINF:159,Пон-Нёф
+#EXTINF:361,Пон-Нёф
 tracks/pont-neuf-long.mp3
-#EXTINF:160,Букинисты у Сены
+#EXTINF:372,Букинисты у Сены
 tracks/books-long.mp3
-#EXTINF:166,Нотр-Дам
+#EXTINF:348,Нотр-Дам
 tracks/notre-dame-long.mp3
 #EXTINF:148,Лувр: средневековый ров
 tracks/moat-long.mp3
