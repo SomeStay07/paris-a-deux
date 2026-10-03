@@ -1,5 +1,5 @@
 {
-  "version": "a2abc0e80a451766c626",
+  "version": "cc6b17038bf2250fe038",
   "assets": [
     {
       "url": "tracks/bir-hakeim-short.mp3?v=0423911fad1fce81",
@@ -149,10 +149,10 @@
       "group": "museum"
     },
     {
-      "url": "tracks/moat-long.mp3?v=5726da7c28f74861",
+      "url": "tracks/moat-long.mp3?v=94f297edce9760c1",
       "kind": "audio",
-      "bytes": 891191,
-      "sha256": "5726da7c28f74861ed3e0857019a36c491fb7fa0a9b3b71e4de2d1f17bc31fc7",
+      "bytes": 2237447,
+      "sha256": "94f297edce9760c18a2dbfb3f4e37ac78f488caf8015cbef8d02a92b32f77bf9",
       "group": "museum"
     },
     {
@@ -163,10 +163,10 @@
       "group": "museum"
     },
     {
-      "url": "tracks/venus-long.mp3?v=000398b58cc74d46",
+      "url": "tracks/venus-long.mp3?v=41d4fff59c38338d",
       "kind": "audio",
-      "bytes": 959007,
-      "sha256": "000398b58cc74d46af64953a07bd95f69c51cd77113e93257fe70a87135af32f",
+      "bytes": 2146287,
+      "sha256": "41d4fff59c38338d373345b8195196f453a766f66b2b849481f9b128c0614466",
       "group": "museum"
     },
     {
@@ -177,10 +177,10 @@
       "group": "museum"
     },
     {
-      "url": "tracks/nike-long.mp3?v=33226b7d54219682",
+      "url": "tracks/nike-long.mp3?v=77691c2820d52420",
       "kind": "audio",
-      "bytes": 989381,
-      "sha256": "33226b7d542196824fa21c843b2d23faa3f228112aed2a6b5e694e49fe0249ca",
+      "bytes": 2174501,
+      "sha256": "77691c2820d5242062908a7e566e02d031c9acca4c448bc6aa86501b452ab643",
       "group": "museum"
     },
     {
@@ -191,10 +191,10 @@
       "group": "museum"
     },
     {
-      "url": "tracks/mona-long.mp3?v=7798b779b024d556",
+      "url": "tracks/mona-long.mp3?v=fdd5e05dbf12229e",
       "kind": "audio",
-      "bytes": 954251,
-      "sha256": "7798b779b024d55674ad54e79bd44e6d331ed2daf9146553d97af44b61cc92d0",
+      "bytes": 2033963,
+      "sha256": "fdd5e05dbf12229ed7a9be15e04395f3935ca8a02e7d58c1b1d9d2eed35a04a8",
       "group": "museum"
     },
     {
@@ -205,10 +205,10 @@
       "group": "museum"
     },
     {
-      "url": "tracks/cana-long.mp3?v=d68a9cded999d4b5",
+      "url": "tracks/cana-long.mp3?v=607fd5cc17e6507a",
       "kind": "audio",
-      "bytes": 967237,
-      "sha256": "d68a9cded999d4b5d45969fc955db1c7f8bfa82a0ac24a71bd3a54bd345130db",
+      "bytes": 2044357,
+      "sha256": "607fd5cc17e6507a18c3f373a4b91df420840b9e18872f92e5378a965440456e",
       "group": "museum"
     },
     {
@@ -219,10 +219,10 @@
       "group": "museum"
     },
     {
-      "url": "tracks/coronation-long.mp3?v=4eebec2046b88faa",
+      "url": "tracks/coronation-long.mp3?v=7ee221c888cfe9f8",
       "kind": "audio",
-      "bytes": 994721,
-      "sha256": "4eebec2046b88faab84196d4455c57b3b36396cbd7de698c84e79c8dd23ea6d5",
+      "bytes": 2100065,
+      "sha256": "7ee221c888cfe9f8741e6aac7675205360a5d1375906b3aab5f59045490f3dec",
       "group": "museum"
     },
     {
@@ -233,10 +233,10 @@
       "group": "museum"
     },
     {
-      "url": "tracks/raft-long.mp3?v=3546743cc6ae9380",
+      "url": "tracks/raft-long.mp3?v=3f830d8d7e8ad6f7",
       "kind": "audio",
-      "bytes": 986222,
-      "sha256": "3546743cc6ae93805bf47e522f4bd5480729c680e6af4da59774445a49d5943f",
+      "bytes": 1997390,
+      "sha256": "3f830d8d7e8ad6f7c8142b0f69ab9e5c99ad7e47c656a67bf2c79d555585e4ff",
       "group": "museum"
     },
     {
@@ -247,10 +247,10 @@
       "group": "museum"
     },
     {
-      "url": "tracks/liberty-long.mp3?v=58a7156f7f3fd2d1",
+      "url": "tracks/liberty-long.mp3?v=3680c30cffc3c76f",
       "kind": "audio",
-      "bytes": 978303,
-      "sha256": "58a7156f7f3fd2d1f68c1f052b6becf1ae2f393a60de5e73d322b5d947840a9a",
+      "bytes": 2044479,
+      "sha256": "3680c30cffc3c76f205f84e167d1ba45ffaf7abbe66cfa6ae2d1ba48971b8231",
       "group": "museum"
     },
     {
@@ -261,10 +261,10 @@
       "group": "museum"
     },
     {
-      "url": "tracks/slaves-long.mp3?v=de9e798b15a2e60c",
+      "url": "tracks/slaves-long.mp3?v=5c48c45ce302cd0b",
       "kind": "audio",
-      "bytes": 948055,
-      "sha256": "de9e798b15a2e60cc4ab4360840ceacbf321952b086661e63e2b52e0989935c2",
+      "bytes": 2236999,
+      "sha256": "5c48c45ce302cd0bfd4bb9f4c7759df1c780824550b24678ce3f831b2c621a37",
       "group": "museum"
     },
     {
@@ -275,10 +275,10 @@
       "group": "museum"
     },
     {
-      "url": "tracks/psyche-long.mp3?v=c3dd77552bd7a36d",
+      "url": "tracks/psyche-long.mp3?v=ed398c1965e90c96",
       "kind": "audio",
-      "bytes": 1001932,
-      "sha256": "c3dd77552bd7a36dbd4ab97d3f0c833da9a280b56dfe5a77a74ffb7edcd3deff",
+      "bytes": 2409820,
+      "sha256": "ed398c1965e90c9606d7ec7f05387df7f836f37ec793bdb4c558490ca6e11ff8",
       "group": "museum"
     },
     {
@@ -291,8 +291,8 @@
     {
       "url": "index.html",
       "kind": "shell",
-      "bytes": 199769,
-      "sha256": "62292afc745747fa7a93998da2f6b07929e5dac827a63261a5e838309c73f843"
+      "bytes": 251683,
+      "sha256": "0382dd5ca6171c5bb0e99b43dde12db9fe45ab88938f3e75f518ba97d5ac25ec"
     },
     {
       "url": "offline.mjs",
@@ -339,8 +339,8 @@
     {
       "url": "content-review.html",
       "kind": "shell",
-      "bytes": 24450,
-      "sha256": "8394f1605762028c7988e949c0b2ea39c5fea273cf5a10925ca4e33ea71cfc31"
+      "bytes": 26228,
+      "sha256": "53baa22025944b066883bc2f406f102d1abb5e588021a9800c008c6f495bd1d9"
     }
   ]
 }

@@ -1,11 +1,11 @@
 importScripts('./range.js');
-const SHELL='paris-shell-a2abc0e80a451766c626', CONTENT='paris-content-v1';
+const SHELL='paris-shell-cc6b17038bf2250fe038', CONTENT='paris-content-v1';
 const root=new URL('./',self.location.href);
 self.addEventListener('install',event=>event.waitUntil((async()=>{
  const response=await fetch(new URL('offline-manifest.json',root),{cache:'no-store'});
  if(!response.ok)throw new Error('Manifest unavailable');
  const manifest=await response.clone().json();
- if(manifest.version!=='a2abc0e80a451766c626')throw new Error('Deployment changed; retry update');
+ if(manifest.version!=='cc6b17038bf2250fe038')throw new Error('Deployment changed; retry update');
  const cache=await caches.open(SHELL);
  for(const asset of manifest.assets.filter(a=>a.kind==='shell')){
   const r=await fetch(new URL(asset.url,root),{cache:'no-store'});
