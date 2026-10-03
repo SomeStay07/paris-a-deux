@@ -12,15 +12,18 @@ async function inspect(scope){
 }
 async function status(){
  if(working||!manifest)return;
+ try{
  const all=await inspect('all'),museum=await inspect('museum');
  say(all.complete?'Весь гид сохранён и проверен. Перед выходом проверьте его в авиарежиме.':museum.complete?'Лувр сохранён и проверен. Городские записи ещё не все скачаны.':'Гид ещё не готов целиком для прогулки без сети. Скачайте Лувр или весь гид заранее.');
+ }catch(error){say('Не удалось проверить хранилище. Офлайн-готовность не подтверждена. Проверьте доступное место и повторите проверку.');}
 }
 async function download(scope){
  if(working||!manifest)return;busy(true);controller=new AbortController();
- const assets=scopeAssets(scope),content=await caches.open(CONTENT_CACHE),shell=await caches.open('paris-shell-'+manifest.version);
+ const assets=scopeAssets(scope);
  say('Сохраняем и проверяем файлы. Не закрывайте приложение.');
  $('offline-progress').max=assets.length;$('offline-progress').value=0;$('offline-progress').hidden=false;
  try{
+  const content=await caches.open(CONTENT_CACHE),shell=await caches.open('paris-shell-'+manifest.version);
   if(navigator.storage?.persist)await navigator.storage.persist().catch(()=>false);
   await saveBatch(assets,(a,signal)=>saveAsset(a.kind==='shell'?shell:content,a,{signal}),done=>{
    $('offline-progress').value=done;say(`Сохраняем и проверяем: ${done} из ${assets.length}. Не закрывайте приложение.`);
