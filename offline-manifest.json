@@ -1,5 +1,5 @@
 {
-  "version": "f4b5cfd28ca4f828450e",
+  "version": "5f8a3dfe8a948f0326f9",
   "assets": [
     {
       "url": "tracks/bir-hakeim-short.mp3?v=0423911fad1fce81",
@@ -291,14 +291,14 @@
     {
       "url": "index.html",
       "kind": "shell",
-      "bytes": 262206,
-      "sha256": "68f0cf95a97edc5533aa3e99e031b7b9aba0da7ee02b888542fa75a69058758c"
+      "bytes": 258927,
+      "sha256": "0cbbc85ea230234bc01a57e42b144e70dbf658ab57770d95bcb38f2eaffc3c60"
     },
     {
       "url": "offline.mjs",
       "kind": "shell",
-      "bytes": 5944,
-      "sha256": "4c4a063acf74752359d309f1e428c8aaed17986f2be5027a131553a118de62c0"
+      "bytes": 6401,
+      "sha256": "41022d452241e296e914025822a74819d49fded14642635e9a6281728ece747b"
     },
     {
       "url": "playback.js",
@@ -309,8 +309,14 @@
     {
       "url": "navigation.js",
       "kind": "shell",
-      "bytes": 8789,
-      "sha256": "9a0e85f8a972c063dd60c128766236a8ae279b095027a6a604c82c2e9b634db3"
+      "bytes": 9177,
+      "sha256": "531d8deb92d93cf4e9ad35277e7d3812d00c273d6a51420ddb39268545d88ca0"
+    },
+    {
+      "url": "guide.js",
+      "kind": "shell",
+      "bytes": 9096,
+      "sha256": "54330a0a4d45db7f1043c18eb2d1636bb3e3452886ae8b5efcee9316c446bac4"
     },
     {
       "url": "cache-core.mjs",
@@ -345,8 +351,8 @@
     {
       "url": "content-review.html",
       "kind": "shell",
-      "bytes": 29279,
-      "sha256": "bab72f3dd2d753084e479e7df26788feefe54c158e5807cff13604c9d8c56392"
+      "bytes": 34875,
+      "sha256": "f414dfdbb3b56c1537e896d482c503902f77960befe122451152c368b97cb56a"
     }
   ]
 }

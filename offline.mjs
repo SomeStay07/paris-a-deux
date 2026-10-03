@@ -1,7 +1,7 @@
 import {CONTENT_CACHE,validResponse,saveAsset,saveBatch} from './cache-core.mjs';
 const $=id=>document.getElementById(id);
 let manifest,working=false,controller;
-const say=text=>{$('offline-status').textContent=text};
+const say=text=>{$('offline-status').textContent=text;const badge=$('offline-badge');if(badge)badge.textContent=text.startsWith('Весь гид сохранён и проверен')?'Офлайн: весь гид готов':text.startsWith('Лувр сохранён и проверен')?'Офлайн: Лувр готов':text.startsWith('Сохраняем')?'Офлайн: идёт загрузка и проверка':'Офлайн: проверьте загрузку через «Без сети»'};
 const scopeAssets=scope=>manifest.assets.filter(a=>a.kind==='shell'||scope==='all'||a.group==='museum');
 const busy=value=>{working=value;document.querySelectorAll('[data-offline]').forEach(b=>b.disabled=value);$('cancel-download').hidden=!value;};
 async function inspect(scope){

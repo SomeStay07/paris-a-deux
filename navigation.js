@@ -2,7 +2,6 @@
 (function(root){
 'use strict';
 function normalize(value){return String(value||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('ru').replace(/ё/g,'е').replace(/œ/g,'oe').replace(/[^\p{L}\p{N}]+/gu,' ').trim()}
-function coordinate(p){return p.lat.toFixed(6)+', '+p.lon.toFixed(6)}
 function links(p){
  const point=p.lat+','+p.lon, name=p.fr||p.place;
  return {
@@ -26,20 +25,19 @@ function find(places,query,scope,position){
 function mount({stories,data,onSelect}){
  const $=id=>document.getElementById(id),make=(tag,text,cls)=>{const e=document.createElement(tag);if(text)e.textContent=text;if(cls)e.className=cls;return e};
  const places=[...stories.map(s=>({...s,fr:data.labels[s.id]})),...data.extras.map(p=>({...p,extra:true}))];
- let position=null,request=0;
+ let position=null,request=0,currentPlace=null;
+ let provider='apple';try{if(localStorage.getItem('paris-map-provider')==='google')provider='google'}catch{}
+ $('map-provider').value=provider;
  const anchor=(text,url)=>{const a=make('a',text);a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a};
  function maps(p,container){
   const urls=links(p),actions=make('div',null,'place-actions');
-  for(const [text,key] of [['Apple Maps','apple'],['Google Maps','google'],['Пешком · Apple','appleWalk'],['Пешком · Google','googleWalk']]){const a=anchor(text,urls[key]);a.setAttribute('aria-label',text+' — '+p.place);actions.append(a)}
-  container.append(actions);
+  const walk=anchor('Идти сюда ↗',urls[provider+'Walk']);walk.className='primary-link';walk.removeAttribute('target');walk.setAttribute('aria-label','Идти сюда: '+p.place+' · '+(provider==='apple'?'Apple Maps':'Google Maps'));
+  const pin=anchor('Показать точку',urls[provider]);pin.removeAttribute('target');pin.setAttribute('aria-label','Показать точку: '+p.place);
+  actions.append(walk,pin);container.append(actions);
  }
- function coordinates(p,container){
-  const d=make('details'),sum=make('summary','Координаты · скопировать');d.append(sum);
-  const input=make('input',null,'coordinates');input.readOnly=true;input.value=coordinate(p);input.setAttribute('aria-label','Координаты: '+p.place);input.onclick=()=>input.select();d.append(input);
-  const b=make('button','Скопировать координаты'),actions=make('div',null,'place-actions'),status=make('p');status.setAttribute('role','status');
-  b.onclick=async()=>{try{await navigator.clipboard.writeText(input.value);status.textContent='Координаты скопированы.'}catch{input.focus();input.select();status.textContent='Выделено: удерживайте текст и выберите «Скопировать».'}};
-  actions.append(b);d.append(actions,status);container.append(d);
- }
+ function updateProviderLabel(){$('map-preference-label').textContent='Карты: '+(provider==='apple'?'Apple Maps':'Google Maps')+' · изменить'}
+ $('map-provider').onchange=()=>{provider=$('map-provider').value==='google'?'google':'apple';try{localStorage.setItem('paris-map-provider',provider)}catch{}updateProviderLabel();renderResults();if(currentPlace)renderSelected(currentPlace)};
+ updateProviderLabel();
  function indoor(p,container){
   container.append(make('p',p.wing+' · уровень '+p.level+' · зал '+p.room,'fr-name'));
   const details=make('details'),sum=make('summary','Показать сотруднику, если потерялись');details.append(sum);
@@ -47,9 +45,9 @@ function mount({stories,data,onSelect}){
   const actions=make('div',null,'place-actions');actions.append(anchor('План Лувра · PDF',$('museum-map').href));container.append(actions);
  }
  function renderSelected(s){
-  const p=places.find(p=>p.id===s.id),box=$('wayfinding');box.replaceChildren();box.append(make('p',p.fr,'fr-name'));
-  if(p.indoor){indoor(p,box);box.append(make('p','Ищите зал по табличкам и плану. GPS не определяет положение внутри музея.'))}
-  else{maps(p,box);coordinates(p,box);box.append(make('p','Метка — ориентир для рассказа. Маршрут строится во внешнем приложении карт.'))}
+  currentPlace=s;const p=places.find(p=>p.id===s.id),box=$('wayfinding');box.replaceChildren();box.append(make('p',p.fr,'fr-name'));
+  if(p.indoor){indoor(p,box);const entry=make('details');entry.append(make('summary','Ещё не в музее? Дойти до входа'));entry.append(make('p','Главный вход — у пирамиды. Сверьте вход и время в билете; после контроля ищите указатели нужного крыла.'));maps(places.find(x=>x.id==='pyramid'),entry);box.append(entry)}
+  else{maps(p,box)}
  }
  function renderResults(){
   const matches=find(places,$('place-search').value,$('place-scope').value,position),box=$('place-results');box.replaceChildren();
@@ -59,15 +57,18 @@ function mount({stories,data,onSelect}){
    const card=make('article',null,'finder-card');card.append(make('h3',p.place),make('p',p.fr,'fr-name'));
    const metric=p.metres===null?'':p.metres<1000?' · ≈'+Math.round(p.metres/50)*50+' м по прямой':' · ≈'+(p.metres/1000).toFixed(1)+' км по прямой';
    card.append(make('p',(p.extra?'Без аудио · '+p.area:p.indoor?'Аудио · внутри Лувра':'Есть аудиорассказ')+metric,'finder-meta'));
-   if(p.indoor)indoor(p,card);else{card.append(make('p',p.note||p.look));maps(p,card);coordinates(p,card)}
+   if(p.indoor)card.append(make('p',p.wing+' · уровень '+p.level+' · зал '+p.room));else{maps(p,card);const detail=make('details');detail.append(make('summary','Где искать и что учесть'),make('p',p.note||p.look));card.append(detail)}
    if(p.extra){const sources=make('details');sources.append(make('summary','Информация о месте'),anchor('Официальный сайт',p.url));if(p.coordinate_source)sources.append(make('span',' · '),anchor('Источник геометки',p.coordinate_source));card.append(sources)}
-   else{const actions=make('div',null,'place-actions'),b=make('button','Открыть рассказ');b.setAttribute('aria-label','Открыть рассказ: '+p.place);b.onclick=()=>onSelect(stories.find(s=>s.id===p.id));actions.append(b);card.append(actions)}
+   else{const actions=make('div',null,'place-actions'),b=make('button','Открыть рассказ');b.setAttribute('aria-label','Открыть рассказ: '+p.place);b.onclick=()=>{onSelect(stories.find(s=>s.id===p.id));$('finder-panel').hidden=true};actions.append(b);card.append(actions)}
    box.append(card);
   }
  }
  $('place-search').oninput=()=>{if($('place-search').value.trim())$('place-scope').value='all';renderResults()};
  $('place-scope').onchange=renderResults;
- $('open-finder').onclick=()=>{$('place-finder').open=true};
+ function openFinder(){$('finder-panel').hidden=false;$('place-finder').open=true;$('place-finder').scrollIntoView({behavior:'smooth',block:'start'})}
+ $('open-finder').onclick=openFinder;
+ $('close-finder').onclick=()=>{$('finder-panel').hidden=true;$('place').scrollIntoView({behavior:'smooth',block:'start'})};
+ $('open-nearby').onclick=()=>{openFinder();$('locate-me').click()};
  $('clear-location').onclick=()=>{request++;position=null;$('clear-location').hidden=true;$('locate-me').disabled=false;$('nearby-status').textContent='Расстояния убраны. Можно снова выбрать место вручную.';renderResults()};
  $('locate-me').onclick=()=>{
   if(!navigator.geolocation){$('nearby-status').textContent='Геопозиция недоступна. Выберите место вручную — карты работают и без доступа к геопозиции гида.';return}
